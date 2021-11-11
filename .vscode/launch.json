@@ -16,7 +16,10 @@
             "request": "launch",
             "mainClass": "SaludoGrafico",
             "projectName": "SaludoGrafico_88d9beda",
-            "vmArgs": "--module-path \"C:\\Program Files\\Java\\javafx16\\lib\"  --add-modules javafx.controls,javafx.fxml"
+            "vmArgs": "--module-path ${env:PATH_TO_FX} --add-modules javafx.controls,javafx.fxml",
+            "env": {
+                "PATH_TO_FX": "C:\\Program Files\\Java\\javafx16\\lib" 
+            }
 
         }
     ]
